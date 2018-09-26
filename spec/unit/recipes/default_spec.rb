@@ -26,6 +26,9 @@ describe 'nginx::default' do
     it 'should install nginx' do
       expect(chef_run).to install_package("nginx")
     end
+    it "should start the Nginx service" do
+         expect(chef_run).to start_service("nginx")
+       end
 
     it 'should create a proxy.conf template in /etc/nginx/sites-available' do
       expect(chef_run).to create_template("/etc/nginx/sites-available/proxy.conf")
