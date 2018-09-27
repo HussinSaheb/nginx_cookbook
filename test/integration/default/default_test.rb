@@ -4,6 +4,9 @@
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at http://inspec.io/docs/reference/resources/
+describe package("") do
+  it { should be_installed}
+end
 
 describe service ("nginx") do
   it { should be_running }
