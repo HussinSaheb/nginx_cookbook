@@ -1,4 +1,4 @@
-# nginx Change
+# nginx Changes
 
 This cookbook, installs nginx, and reverse proxies port 80 to 7000
 
